@@ -1,4 +1,5 @@
-##  How to secure & harden your Ubuntu 20.04 installation
+#  How to secure & harden your Ubuntu 20.04 installation
+![](https://img.shields.io/badge/<Linux>-<Ubuntu>-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a)
 
 This is a simple guide to secure and harden your Ubuntu 20.04 server to make it not only as secure as it can be for vulnerabilites and potential attackers, but also performant.
 
