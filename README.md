@@ -20,31 +20,31 @@ Make sure we are up to date with both packages available and packages installed.
 
 We will want to remove the possibility of root being able to login and save us much of the hassle of problems that can occur from elevated permissions.
 
-        sudo nano /etc/ssh/sshd_config
+    sudo nano /etc/ssh/sshd_config
 
 Change <code>PermitRootLogin</code> to:
 
-        PermitRootLogin no
+    PermitRootLogin no
 
 Now restart the SSH server:
 
-        sudo service ssh restart
+    sudo service ssh restart
 
 ##  Lock down access to SSH to a single user or multiple users
 
-        sudo nano /etc/ssh/sshd_config
+    sudo nano /etc/ssh/sshd_config
 
 Add to the bottom of the file;
 
-        DenyUsers all
-        AllowUsers your_username_here
+    DenyUsers all
+    AllowUsers your_username_here
 
 ### Even better if you have a static IP then lock down your account to one address
 
 You can either define your IP address or a range. For example 111.10.1.1 or 111.10.1.*
 
-        AllowUsers your_username_here@111.10.1.1           #Will only allow SSH connections from 111.10.1.1
-        AllowUsers your_username_here@111.10.1.*           #Will only allow SSH connections from 111.10.1.0/24 Range
+    AllowUsers your_username_here@111.10.1.1           #Will only allow SSH connections from 111.10.1.1
+    AllowUsers your_username_here@111.10.1.*           #Will only allow SSH connections from 111.10.1.0/24 Range
 
 ## Change the default SSHD port
 
@@ -53,12 +53,12 @@ https://web.mit.edu/rhel-doc/4/RH-DOCS/rhel-sg-en-4/ch-ports.html
 
 Edit:
 
-        sudo nano /etc/ssh/sshd_config
+    sudo nano /etc/ssh/sshd_config
 
 Change:
 
-        Port <port under 1024>
+    Port <port under 1024>
 
 Then restart the SSH daemon:
 
-        sudo service ssh restart
+    sudo service ssh restart
