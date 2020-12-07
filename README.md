@@ -44,3 +44,16 @@ You can either define your IP address or a range. For example 111.10.1.1 or 111.
 
         AllowUsers your_username_here@111.10.1.1           #Will only allow SSH connections from 111.10.1.1
         AllowUsers your_username_here@111.10.1.*           #Will only allow SSH connections from 111.10.1.0/24 Range
+
+## Change the default SSHD port
+
+Yes those invested enogh with port scanners will have no issue finding your port, but port obfuscation shouldnt be seen as an independant layer of security. Its just another level of weeding out attacks from less "invested" attackers. You will rid yourself of many bot attacks and when used in conjunction with other measures it all adds up. Specify a  port below 1024 to prevent unprivelaged processes from binding to it and impersonating it. For a list of ports and what they do check here: 
+https://web.mit.edu/rhel-doc/4/RH-DOCS/rhel-sg-en-4/ch-ports.html
+
+Edit:
+
+        sudo nano /etc/ssh/sshd_config
+
+Change:
+
+        Port <port under 1024>
