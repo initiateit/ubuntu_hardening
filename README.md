@@ -40,7 +40,7 @@ Add to the bottom of the file;
 
 ### Even better if you have a static IP then lock down your account to one address
 
-You can either define your IP address or a range. For example 111.10.1.1 or 111.10.1.0/24
+You can either define your IP address or a range. For example 111.10.1.1 or 111.10.1.*
 
         AllowUsers your_username_here@111.10.1.1           #Will only allow SSH connections from 111.10.1.1
         AllowUsers your_username_here@111.10.1.*           #Will only allow SSH connections from 111.10.1.0/24 Range
