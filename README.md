@@ -57,3 +57,7 @@ Edit:
 Change:
 
         Port <port under 1024>
+
+Then restart the SSH daemon:
+
+        sudo service ssh restart
