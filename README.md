@@ -35,6 +35,7 @@ Now restart the SSH server:
 
 Add to the bottom of the file;
 
+        DenyUsers all
         AllowUsers your_username_here
 
 ### Even better if you have a static IP then lock down your account to one address
