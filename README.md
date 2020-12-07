@@ -6,7 +6,7 @@ This is a simple guide to secure and harden your Ubuntu 20.04 server to make it 
 
 ## Update and Upgrade
 
-Self explanatory.
+Make sure we are up to date with both packages available and packages installed.
 
     sudo apt update && sudo apt upgrade -y
 
@@ -36,3 +36,7 @@ Now restart the SSH server:
 Add to the bottom of the file;
 
         AllowUsers your_username_here
+
+### Even better if you have a static IP then lock down your account to one address
+
+        AllowUsers your_username_here@<your_ip_address_here>
