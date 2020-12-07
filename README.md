@@ -21,10 +21,18 @@ We will want to remove the possibility of root being able to login and save us m
 
         sudo nano /etc/ssh/sshd_config
 
-Change:
+Change <code>PermitRootLogin</code> to:
 
         PermitRootLogin no
 
 Now restart the SSH server:
 
         sudo service ssh restart
+
+##  Lock down access to SSH to a single user or multiple users
+
+        sudo nano /etc/ssh/sshd_config
+
+Add to the bottom of the file;
+
+        AllowUsers your_username_here
