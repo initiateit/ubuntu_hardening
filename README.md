@@ -1,8 +1,3 @@
-<link rel="stylesheet" href="/path/to/styles/default.css">
-<script src="/path/to/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-
-
 #  How to secure & harden your Ubuntu 20.04 installation
 ![](https://img.shields.io/badge/Linux-Ubuntu-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a)
 
