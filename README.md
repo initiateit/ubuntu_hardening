@@ -1,3 +1,8 @@
+<link rel="stylesheet" href="/path/to/styles/default.css">
+<script src="/path/to/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
 #  How to secure & harden your Ubuntu 20.04 installation
 ![](https://img.shields.io/badge/Linux-Ubuntu-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a)
 
@@ -63,9 +68,8 @@ Then restart the SSH daemon:
 
     sudo service ssh restart
 
-<link rel="stylesheet" href="/path/to/styles/default.css">
-<script src="/path/to/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15`
-- ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) `#c5f015`
-- ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `#1589F0`
+<pre><code class="bash">
+
+sudo service ssh restart
+
+</code></pre>
