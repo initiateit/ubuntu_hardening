@@ -63,8 +63,3 @@ Then restart the SSH daemon:
 
     sudo service ssh restart
 
-<pre><code class="bash">
-
-sudo service ssh restart
-
-</code></pre>
